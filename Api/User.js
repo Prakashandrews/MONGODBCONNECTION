@@ -4,7 +4,6 @@ const User = require('../DB/User');
 const route = express.Router();
 
 route.post('/', async(req,res) => {
-    console.log("test1", req.body);
     const {firstName, lastName} = req.body;
     let user = {};
     user.firstName = firstName;
